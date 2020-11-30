@@ -26,9 +26,9 @@ jobs:
       env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
     
-    # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-      run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorGitHubPagesDemo\/" \/>/g' release/wwwroot/index.html
+    # changes the base-tag in index.html from '/' to 'testBlazorWeb' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html from / to testBlazorWeb
+      run: sed -i 's/<base href="\/" \/>/<base href="\/testBlazorWeb\/" \/>/g' release/wwwroot/index.html
       env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
     
